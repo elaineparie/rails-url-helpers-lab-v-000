@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
       if !@student.active
       @student.active = true
       @student.save
+      redirect "/students/#{@student.id}"
     elsif @student.active = true
       @student.active = false
       @student.save
