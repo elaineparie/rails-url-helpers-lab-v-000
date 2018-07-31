@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
       @student = Student.find(params[:id])
     end
 
-    def activate_student_path
-    end 
+    def activate_student_path(@student)
+    end
 
 end
