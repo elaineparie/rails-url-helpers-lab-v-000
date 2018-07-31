@@ -11,6 +11,7 @@ class StudentsController < ApplicationController
   def activate
       @student = Student.find(params[:id])
       if !@student.active
+        binding.pry
       @student.active = true
     elsif @student.active = true
       @student.active = false
