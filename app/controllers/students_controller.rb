@@ -15,6 +15,7 @@ class StudentsController < ApplicationController
       @student.save
     elsif @student.active = true
       @student.active = false
+      @student.save
     end
   end
 
